@@ -10,13 +10,6 @@ As the results are not good, I have not yet cleaned up the project and made it p
 
 Use this mostly for your own curiosity or experimentation.
 
-## Training
-The model was trained using positive prompt and negative prompt pairs scraped from the CivitAI API. In total a set of 18k pairs was trained on.
-
-The final trained epoch was #54.
-
-The [tokenized data](https://huggingface.co/mnemic/NegativePromptGenerator/blob/main/tokenized_data.pt) can be downloaded from [huggingface](https://huggingface.co/mnemic/NegativePromptGenerator/tree/main). Place this in the: `dataset/`-folder
-
 ## Model Weights
 Model weights and checkpoint can be downloaded from my [huggingface](https://huggingface.co/mnemic/NegativePromptGenerator/tree/main).
 
@@ -28,6 +21,24 @@ The [model.safetensors](https://huggingface.co/mnemic/NegativePromptGenerator/bl
 > These files are not included in this repository due to file size. They should be manually downloaded from the huggingface space and placed in the folder:
 >
 > `models/negativeprompt_054/`
+
+## Training
+The model was trained using positive prompt and negative prompt pairs scraped from the CivitAI API. In total a set of 18k pairs was trained on.
+
+The final trained epoch was #54.
+
+The [tokenized data](https://huggingface.co/mnemic/NegativePromptGenerator/blob/main/tokenized_data.pt) can be downloaded from [huggingface](https://huggingface.co/mnemic/NegativePromptGenerator/tree/main). Place this in the: `dataset/`-folder
+
+1. Create a local environment. You can use the included [create_env.bat](https://github.com/MNeMoNiCuZ/create_venv) from my other project to easily set it up.
+2. Install the required libraries using `pip install -r requirements.txt` from inside the environment.
+3. Install [PyTorch](https://pytorch.org/get-started/locally/) according to your GPU's capabilities.
+4. Run `py finetune_gpt2.py` to continue training, or train a model from scratch.
+
+Be sure to edit the script and make sure the TOKENIZED_DATA_PATH and CHECKPOINT_PATH are correct (if you are resuming training). Leave it empty to start a new training from scratch.
+
+## Local Inference
+1. Ensure you have the project set up according to steps 1-3 in the Training section.
+2. Run `py inference.py "Insert Your Prompt Here"` to get a negative prompt returned. You could also update the script to make it save the output, or generate a bunch of files with outputs.
 
 ## Comfy Node
 To test the model in a realistic environment I created a ComfyUI node for the inference. It's a simple implementation but it works fine.
