@@ -25,6 +25,16 @@ I have included it in my [ComfyUI Node Pack](https://github.com/MNeMoNiCuZ/Comfy
 
 ![image](https://github.com/MNeMoNiCuZ/NegativePromptGenerator/assets/60541708/6b7614e6-2510-4b02-8696-8a6d7e1c59d3)
 
+## Results & Conclusions
+**Is this better than having no negative prompt?**
+
+> Yes, sometimes it is. It's a bit random, but I more often preferred the results with the model than not. I used my [A/B Tester](https://github.com/MNeMoNiCuZ/ABTester) to get a less biased result test.
+
+**What's next?**
+
+> Re-training of the model at some point. For now paused and put on hold.
+
+> Check out [Prompt Quill](https://github.com/osi1880vr/prompt_quill). A similar but seemingly successful project to improve an input prompt.
 
 ## Future steps to experiment with
 - [ ] Re-train the model with proper stopping
