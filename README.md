@@ -59,5 +59,5 @@ I have included it in my [ComfyUI Node Pack](https://github.com/MNeMoNiCuZ/Comfy
 > Check out [Prompt Quill](https://github.com/osi1880vr/prompt_quill). A similar but seemingly successful project to improve an input prompt.
 
 ## Future steps to experiment with
-- [ ] Re-train the model with proper stopping
+- [ ] Re-train the model with proper separator between the inputs and the outputs, and call on this token during inference
 - [ ] Consider RAG implementation of the dataset or additional data
