@@ -18,7 +18,14 @@ The final trained epoch was #54.
 ## Model Weights
 Model weights and checkpoint can be downloaded from my [huggingface](https://huggingface.co/mnemic/NegativePromptGenerator/tree/main).
 
-The [weights.pt](https://huggingface.co/mnemic/NegativePromptGenerator/blob/main/weights.pt) contains the weights. Use them freely.
+The [weights.pt](https://huggingface.co/mnemic/NegativePromptGenerator/blob/main/weights.pt) contains the weights. Use them freely for inference.
+
+The [model.safetensors](https://huggingface.co/mnemic/NegativePromptGenerator/blob/main/model.safetensors) contains the checkpoint. Use this to continue training.
+
+> [!CAUTION]
+> These files are not included in this repository due to file size. They should be manually downloaded from the huggingface space and placed in the folder:
+>
+> `/models/negativeprompt_054/`
 
 ## Comfy Node
 To test the model in a realistic environment I created a ComfyUI node for the inference. It's a simple implementation but it works fine.
