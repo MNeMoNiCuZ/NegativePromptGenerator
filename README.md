@@ -61,3 +61,6 @@ I have included it in my [ComfyUI Node Pack](https://github.com/MNeMoNiCuZ/Comfy
 ## Future steps to experiment with
 - [ ] Re-train the model with proper separator between the inputs and the outputs, and call on this token during inference
 - [ ] Consider RAG implementation of the dataset or additional data
+
+## Special Thanks
+Thanks to [DonMischo](https://civitai.com/user/DonMischo/models) for testing out the training script and lending me the compute to train the epochs for this version.
