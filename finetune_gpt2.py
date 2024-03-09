@@ -17,7 +17,7 @@ GRADIENT_ACCUMULATION_STEPS = 4  # Adjust based on your GPU memory
 TOKENIZED_DATA_PATH = 'dataset/tokenized_data.pt'
 MODEL_SAVE_PATH = 'models/'
 # Resume training from CHECKPOINT_PATH
-CHECKPOINT_PATH = 'models/negativeprompt_009/'  # e.g., 'models/your_checkpoint_folder/'
+CHECKPOINT_PATH = 'models/negativeprompt_054/'  # e.g., 'models/your_checkpoint_folder/'
 
 def load_dataset(file_path):
     return torch.load(file_path)
