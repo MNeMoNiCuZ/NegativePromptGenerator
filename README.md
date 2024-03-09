@@ -16,7 +16,9 @@ The model was trained using positive prompt and negative prompt pairs scraped fr
 The final trained epoch was #54.
 
 ## Model Weights
-Model weights and checkpoint can be downloaded from huggingface.
+Model weights and checkpoint can be downloaded from my [huggingface](https://huggingface.co/mnemic/NegativePromptGenerator/tree/main).
+
+The [weights.pt](https://huggingface.co/mnemic/NegativePromptGenerator/blob/main/weights.pt) contains the weights. Use them freely.
 
 ## Comfy Node
 To test the model in a realistic environment I created a ComfyUI node for the inference. It's a simple implementation but it works fine.
