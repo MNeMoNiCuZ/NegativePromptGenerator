@@ -1,0 +1,1 @@
+Add your positive prompts here, one per file. Make sure the file name has a matching pair in the other (positive/negative)-folder.
