@@ -29,7 +29,7 @@ The final trained epoch was #54.
 
 The [tokenized data](https://huggingface.co/mnemic/NegativePromptGenerator/blob/main/tokenized_data.pt) can be downloaded from [huggingface](https://huggingface.co/mnemic/NegativePromptGenerator/tree/main). Place this in the: `dataset/`-folder
 
-1. Create a local environment. You can use the included [create_env.bat](https://github.com/MNeMoNiCuZ/create_venv) from my other project to easily set it up.
+1. Create a virtual environment. You can use the [venv_create.bat](https://github.com/MNeMoNiCuZ/create_venv) to easily set an virtual environment up.
 2. Install the required libraries using `pip install -r requirements.txt` from inside the environment.
 3. Install [PyTorch](https://pytorch.org/get-started/locally/) according to your GPU's capabilities.
 4. Run `py finetune_gpt2.py` to continue training, or train a model from scratch.
